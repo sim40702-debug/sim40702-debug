@@ -2,8 +2,8 @@ name: Generate Pac-Man Contribution Graph
 
 on:
   schedule:
-    - cron: "0 */6 * * *"   # rigenera ogni 6 ore
-  workflow_dispatch:         # ti permette di lanciarlo manualmente
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
   push:
     branches:
       - main
