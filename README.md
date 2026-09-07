@@ -36,11 +36,6 @@
 ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ_IDEA-000000?style=flat-square&logo=intellijidea&logoColor=white)
 ![NetBeans](https://img.shields.io/badge/NetBeans-1B6AC6?style=flat-square&logo=apache-netbeans-ide&logoColor=white)
 
-## Statistiche GitHub
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=sim40702-debug&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sim40702-debug&layout=compact&theme=radical)
-
 ## My GitHub History
 
 <picture>
