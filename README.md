@@ -1,5 +1,4 @@
 <h1 align="left">Simone</h1>
-
 <p align="center"><a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=georgia&pause=1000&color=F7730F&center=true&width=500&lines=Apprendista+Informatico+Programmatore;Sempre+alla+ricerca+di+nuove+sfide" alt="Typing SVG" /></a></p>
 
 <p align="left">
@@ -39,9 +38,9 @@
 ## My GitHub History
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sim40702-debug/sim40702-debug/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sim40702-debug/sim40702-debug/output/pacman-contribution-graph.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/sim40702-debug/sim40702-debug/output/pacman-contribution-graph.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sim40702-debug/sim40702-debug/output/apple-contribution-graph.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sim40702-debug/sim40702-debug/output/apple-contribution-graph-light.svg">
+  <img alt="apple contribution graph" src="https://raw.githubusercontent.com/sim40702-debug/sim40702-debug/output/apple-contribution-graph.svg">
 </picture>
 
 > Repository in pubblicazione progressiva.
