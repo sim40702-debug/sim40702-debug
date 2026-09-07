@@ -38,9 +38,9 @@
 ## My GitHub History
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sim40702-debug/sim40702-debug/output/apple-contribution-graph.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sim40702-debug/sim40702-debug/output/apple-contribution-graph-light.svg">
-  <img alt="apple contribution graph" src="https://raw.githubusercontent.com/sim40702-debug/sim40702-debug/output/apple-contribution-graph.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sim40702-debug/sim40702-debug/output/mac-contribution-graph.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sim40702-debug/sim40702-debug/output/mac-contribution-graph-light.svg">
+  <img alt="mac contribution graph" src="https://raw.githubusercontent.com/sim40702-debug/sim40702-debug/output/mac-contribution-graph.svg">
 </picture>
 
 > Repository in pubblicazione progressiva.
