@@ -38,15 +38,15 @@
 
 ## Statistiche GitHub
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=TUO_USERNAME&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=TUO_USERNAME&layout=compact&theme=radical)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=sim40702-debug&show_icons=true&theme=radical)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sim40702-debug&layout=compact&theme=radical)
 
 ## My GitHub History
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TUO_USERNAME/TUO_USERNAME/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/TUO_USERNAME/TUO_USERNAME/output/pacman-contribution-graph.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/TUO_USERNAME/TUO_USERNAME/output/pacman-contribution-graph.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sim40702-debug/sim40702-debug/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/sim40702-debug/sim40702-debug/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/sim40702-debug/sim40702-debug/output/pacman-contribution-graph.svg">
 </picture>
 
 > Repository in pubblicazione progressiva.
