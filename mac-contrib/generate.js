@@ -118,9 +118,6 @@ function buildSvg(weeks, { dark }) {
   const screenX = totalPad;
   const windowsTopY = groundY - windowAreaH;
 
-  const totalCells = cols * rows;
-  const scanDuration = Math.max(10, Math.min(26, totalCells / 30));
-
   // skyline lontana, decorativa, non legata ai dati (profondita')
   let farSkyline = "";
   const farCount = 26;
@@ -151,10 +148,9 @@ function buildSvg(weeks, { dark }) {
     skyDeco += `<ellipse cx="${width - 90}" cy="70" rx="34" ry="11" fill="#ffffff" opacity="0.5"/>`;
   }
 
-  // edifici (dati reali) + finestre animate
+  // edifici (dati reali) + finestre
   let buildings = "";
   let windows = "";
-  let delayIndex = 0;
 
   weeks.forEach((week, wi) => {
     const bx = screenX + wi * (cell + gap);
@@ -178,19 +174,14 @@ function buildSvg(weeks, { dark }) {
       const level = levelFor(day.contributionCount, max || 1);
       const cx = bx + (buildingW - cell) / 2;
       const cy = windowsTopY + day.weekday * (cell + gap);
-      const finalColor = levels[level];
-      const delay = (delayIndex / totalCells) * scanDuration;
-      delayIndex++;
+      const finalColor = level === 0 ? unlit : levels[level];
 
+      // finestra statica: accesa se ci sono contribuzioni quel giorno,
+      // spenta altrimenti. Nessuna animazione a ciclo: riflette i dati
+      // reali in modo stabile, non "a caso".
       windows += `
-      <rect x="${cx.toFixed(1)}" y="${cy.toFixed(1)}" width="${cell}" height="${cell}" rx="1.5" fill="${unlit}">
+      <rect x="${cx.toFixed(1)}" y="${cy.toFixed(1)}" width="${cell}" height="${cell}" rx="1.5" fill="${finalColor}">
         <title>${day.date}: ${day.contributionCount} contribuzioni</title>
-        <animate attributeName="fill"
-          values="${unlit};${finalColor};${finalColor};${unlit}"
-          keyTimes="0;0.03;0.88;1"
-          dur="${scanDuration.toFixed(2)}s"
-          begin="${delay.toFixed(2)}s"
-          repeatCount="indefinite" />
       </rect>`;
     });
   });
