@@ -26,6 +26,7 @@ jobs:
       - name: Generate SVG
         run: node mac-contrib/generate.js
         env:
+          GH_PAT: ${{ secrets.GH_PAT }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USER: ${{ github.repository_owner }}
 

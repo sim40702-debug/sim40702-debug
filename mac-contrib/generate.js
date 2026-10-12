@@ -6,11 +6,19 @@
 const fs = require("fs");
 const path = require("path");
 
-const TOKEN = process.env.GITHUB_TOKEN;
+// Uso il token personale (GH_PAT) se c'e': cosi' si vedono anche le
+// contribuzioni nei repo privati. Se manca, uso GITHUB_TOKEN (solo pubbliche).
+const TOKEN = process.env.GH_PAT || process.env.GITHUB_TOKEN;
 const USER = process.env.GITHUB_USER;
 
+if (!process.env.GH_PAT) {
+  console.log(
+    "Attenzione: GH_PAT non impostato, vedo solo le contribuzioni pubbliche.",
+  );
+}
+
 if (!TOKEN || !USER) {
-  console.error("Serve GITHUB_TOKEN e GITHUB_USER come env var.");
+  console.error("Serve GH_PAT (o GITHUB_TOKEN) e GITHUB_USER come env var.");
   process.exit(1);
 }
 
@@ -92,27 +100,29 @@ function buildSvg(weeks, { dark }) {
   const width = totalPad * 2 + cols * (cell + gap);
   const height = groundY + bottomMargin;
 
-  const skyDark1 = "#05070f", skyDark2 = "#141a33";
-  const skyLight1 = "#ffd9a0", skyLight2 = "#c9dcf0";
+  const skyDark1 = "#05070f",
+    skyDark2 = "#141a33";
+  const skyLight1 = "#ffd9a0",
+    skyLight2 = "#c9dcf0";
 
   const fillsDark = ["#151a2b", "#1b2138", "#11151f"];
   const fillsLight = ["#5b6b8c", "#6d7ea3", "#4a5878"];
 
   const unlit = dark ? "#0c0f1c" : "#3d4867";
   const levels = dark
-    ? ["#0c0f1c", "#5a3d1e", "#a8722f", "#e8a94a", "#ffdf9b"]
-    : ["#3d4867", "#8a6a3a", "#c99a4c", "#f0c069", "#fff2cf"];
+    ? ["#0c0f1c", "#9a6a2c", "#c98a3a", "#f0b456", "#ffe6a8"]
+    : ["#3d4867", "#b08548", "#d6a656", "#f2c66f", "#fff2cf"];
 
   let max = 0;
   weeks.forEach((w) =>
     w.contributionDays.forEach((d) => {
       if (d.contributionCount > max) max = d.contributionCount;
-    })
+    }),
   );
 
   let totalContrib = 0;
   weeks.forEach((w) =>
-    w.contributionDays.forEach((d) => (totalContrib += d.contributionCount))
+    w.contributionDays.forEach((d) => (totalContrib += d.contributionCount)),
   );
 
   const screenX = totalPad;
@@ -220,11 +230,11 @@ async function main() {
 
   fs.writeFileSync(
     path.join(outDir, "mac-contribution-graph.svg"),
-    buildSvg(weeks, { dark: true })
+    buildSvg(weeks, { dark: true }),
   );
   fs.writeFileSync(
     path.join(outDir, "mac-contribution-graph-light.svg"),
-    buildSvg(weeks, { dark: false })
+    buildSvg(weeks, { dark: false }),
   );
 
   console.log("SVG generati in dist/");
