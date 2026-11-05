@@ -1,4 +1,4 @@
-name: Generate Macintosh contribution graph
+name:  Generate Macintosh contribution graph
 
 on:
   schedule:
@@ -15,22 +15,22 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name:  Checkout repo
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name:  Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Generate SVG
+      - name:  Generate SVG
         run: node mac-contrib/generate.js
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_USER: ${{ github.repository_owner }}
 
-      - name: Push output to output branch
+      - name:  Push output to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
