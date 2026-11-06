@@ -1,5 +1,10 @@
-<h1 align="left"> Simone</h1>
-<p align="center"><a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=georgia&pause=1000&color=F7730F&center=true&width=500&lines=hello.;Apprendista+Informatico+Programmatore;Sempre+alla+ricerca+di+nuove+sfide" alt="Typing SVG" /></a></p>
+# Simone
+
+<p align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=georgia&pause=1000&color=F7730F&center=true&width=500&lines=hello.;Apprendista+Informatico+Programmatore;Sempre+alla+ricerca+di+nuove+sfide" alt="Typing SVG" />
+  </a>
+</p>
 
 <p align="left">
   Sviluppo applicazioni web e desktop, dal backend al frontend.
@@ -13,7 +18,7 @@
 
 ---
 
-##  Tech
+## Tech
 
 **Linguaggi**
 
@@ -32,12 +37,13 @@
 
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+![Ubuntu Server](https://img.shields.io/badge/Ubuntu_Server-E95420?style=flat-square&logo=ubuntu&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
 ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ_IDEA-000000?style=flat-square&logo=intellijidea&logoColor=white)
 ![NetBeans](https://img.shields.io/badge/NetBeans-1B6AC6?style=flat-square&logo=apache-netbeans-ide&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
 
-##  My GitHub History
+## My GitHub History
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/sim40702-debug/sim40702-debug/output/mac-contribution-graph.svg">
@@ -49,4 +55,6 @@
 
 ---
 
-<p align="center"><sub> Designed by Simone in Ticino</sub></p>
+<p align="center">
+  <sub>Designed by Simone in Ticino</sub>
+</p>
