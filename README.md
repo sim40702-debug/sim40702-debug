@@ -45,7 +45,7 @@
 ![NetBeans](https://img.shields.io/badge/NetBeans-1B6AC6?style=flat-square&logo=apache-netbeans-ide&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
 ![Windows Terminal](https://img.shields.io/badge/Windows_Terminal-4D4D4D?style=flat-square&logo=windowsterminal&logoColor=white)
-![MacOS Terminal](https://img.shields.io/badge/Windows_Terminal-4D4D4D?style=flat-square&logo=windowsterminal&logoColor=white)
+![macOS Terminal](https://img.shields.io/badge/macOS_Terminal-000000?style=flat-square&logo=apple&logoColor=white)
 
 **Networking &amp; ops**
 
